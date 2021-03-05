@@ -1,0 +1,63 @@
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.main {
+    display: flex;
+    padding-left: 2em;
+    padding-right: 2em;
+    justify-content: center;
+    align-items: middle;
+}
+
+.clockbox,
+#clock {
+    width: 100%;
+}
+
+.mid-circle {
+    fill: white;
+}
+.hour-marks {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-width: 10;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: deepskyblue;
+    stroke-linecap: round;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+.sizing-box {
+    fill: none;
+}
+
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
